@@ -13,8 +13,15 @@ var phraseArray = [ "Practicw {command}s with the aw motion.",
                     "Press q: and meet the command-line window",
                     "In Command-Line mode, we can use the < C-f > mapping to switch to the command-line window.",
                     "Use :write !{ cmd} to use the contents of the buffer as standard input for the specified {cmd}",
+                    "Use the :source command to execute the batch.vim script",
                     "Use the argdo: command",
-                    "Use the :source command to execute the batch.vim script" ];
+                    "Use '{range}: normal {stuff}' to edit multiple lines in a selection",
+                    "Use :ls command to list buffers in memory",
+                    "In directory view (netrw), create a new file with '%'",
+                    "In directory view (netrw), create a new directory with 'd'",
+                    "Use ':write !{cmd}' to pipe buffer as input into the specified command",
+                    "Use 'e' to move to the end of the next word, and 'ge' to the end of the previous word",
+                    "use a /search as the motion for some other command, like delete (d/search<C-R>)"];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
 }
