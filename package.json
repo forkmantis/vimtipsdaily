@@ -1,0 +1,20 @@
+{
+  "name": "vimtipsdaily",
+  "version": "0.1.0",
+  "description": "a simple bot to tweet out one VIm learning task a day, at the same time, to get users to practice specific VIm commands until they become habit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "VIm",
+    "tips",
+    "practice"
+  ],
+  "author": "Will Killian <github.user@forkmantis.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-twitterbot": "^0.2.2",
+    "twit": "^2.2.9"
+  }
+}
