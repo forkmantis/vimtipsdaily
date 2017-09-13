@@ -1,6 +1,6 @@
 var Twit = require('twit');
 var TwitterBot = require('node-twitterbot').TwitterBot;
-var Bot = new TwitterBot({
+var Bot = new Twit({
  consumer_key: process.env.BOT_CONSUMER_KEY,
  consumer_secret: process.env.BOT_CONSUMER_SECRET,
  access_token: process.env.BOT_ACCESS_TOKEN,
@@ -26,4 +26,6 @@ function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
 }
 var phrase = chooseRandom(phraseArray) + ", " + chooseRandom(phraseArray);
-Bot.tweet(phrase);
+Bot.post('statuses/update', { status: phrase }, function(err, data, response) {
+    console.log(data);
+});
