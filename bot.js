@@ -25,7 +25,7 @@ var phraseArray = [ "Practicw {command}s with the aw motion.",
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
 }
-var phrase = chooseRandom(phraseArray) + ", " + chooseRandom(phraseArray);
+var phrase = chooseRandom(phraseArray);
 Bot.post('statuses/update', { status: phrase }, function(err, data, response) {
     console.log(data);
 });
