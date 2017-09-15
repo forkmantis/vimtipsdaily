@@ -6,12 +6,12 @@ var Bot = new Twit({
  access_token: process.env.BOT_ACCESS_TOKEN,
  access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
 });
-var phraseArray = [ "Practicw {command}s with the aw motion.",
-                    "From Insert mode, we can switch to Insert Normal mode by pressing < C-o >",
-                    "Use 'o' to go to other end of highlighted text",
-                    "At Vim’s command line, the < C-r > < C-w > mapping copies the word under the cursor and inserts it at the command-line prompt.",
-                    "Press q: and meet the command-line window",
-                    "In Command-Line mode, we can use the < C-f > mapping to switch to the command-line window.",
+var phraseArray = [ "Practice {command}s with the aw motion. (i.e. daw to delete the word under your cursor)",
+                    "From Insert mode, we can switch to Normal mode for one operation by pressing < C-o >",
+                    "Use 'o' to toggle to other end of highlighted text. Useful to adjust the starting point of your visual selection",
+                    "Use < C-r > < C-w > to copy the word under the cursor and insert it at the command-line prompt.",
+                    "Press q: to access command-line window. You can edit your command history like any other text!",
+                    "Use < C-f > to switch from Command-Line mode to the command-line window.",
                     "Use :write !{ cmd} to use the contents of the buffer as standard input for the specified {cmd}",
                     "Use the :source command to execute the batch.vim script",
                     "Use the argdo: command",
