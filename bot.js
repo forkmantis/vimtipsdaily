@@ -14,7 +14,7 @@ var phraseArray = [ "Practice {command}s with the aw motion. (i.e. daw to delete
                     "Use < C-f > to switch from Command-Line mode to the command-line window.",
                     "Use :write !{ cmd} to use the contents of the buffer as standard input for the specified {cmd}",
                     "Use the :source command to execute the batch.vim script",
-                    "Use the argdo: command",
+                    "Use the argdo: command on a visual selection to perform the same operation across multiple lines",
                     "Use '{range}: normal {stuff}' to edit multiple lines in a selection",
                     "Use :ls command to list buffers in memory",
                     "In directory view (netrw), create a new file with '%'",
