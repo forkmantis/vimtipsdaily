@@ -21,7 +21,13 @@ var phraseArray = [ "Practice {command}s with the aw motion. (i.e. daw to delete
                     "In directory view (netrw), create a new directory with 'd'",
                     "Use ':write !{cmd}' to pipe buffer as input into the specified command",
                     "Use 'e' to move to the end of the next word, and 'ge' to the end of the previous word",
-                    "use a /search as the motion for some other command, like delete (d/search<C-R>)"];
+                    "Use a /search as the motion for some other command, like delete (d/search<C-R>)",
+                    "Use `` to jump to snap back to where you were before your last jump (or '' to jump to the last line)",
+                    "Use ( and ) to jump to the beginning and end of sentences.",
+                    "Use gf to jump to the file name under the cursor. https://vimhelp.appspot.com/editing.txt.html#gf",
+                    "Use :changes to see the change list.  Use g; and g, to jump to the locations of the changes.",
+                    "Use m{capital letter} to make a global mark. Close and reopen VIm, and press '{capital letter} to open the file w/ the global mark."
+                    ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
 }
