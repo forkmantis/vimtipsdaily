@@ -8,6 +8,8 @@ var Bot = new Twit({
 });
 var phraseArray = [ "Practice {command}s with the aw motion. (i.e. daw to delete the word under your cursor)",
                     "From Insert mode, we can switch to Normal mode for one operation by pressing < C-o >",
+                    "Use <c-a> to increment the next number.  {number}<c-a> adds {number} to the next number.",
+                    "Use <c-x> to decrement the next number.  {number}<c-x> subtracts {number} from the next number.",
                     "Use 'o' to toggle to other end of highlighted text. Useful to adjust the starting point of your visual selection",
                     "Use < C-r > < C-w > to copy the word under the cursor and insert it at the command-line prompt.",
                     "Press q: to access command-line window. You can edit your command history like any other text!",
