@@ -50,7 +50,18 @@ var phraseArray = [
                     "Use :edit! to revert all changes to the first buffer in the argument list",
                     "Use :wall to save changes to all files in the buffer list.",
                     "Use 'var += 1' in a macro to increment a number.  Useful for numbering lists, etc.",
-                    "Edit a macro by putting it's register into your buffer, editing, then yanking it back to its regsiter. \"ap, [edit], \"add."
+                    "Edit a macro by putting it's register into your buffer, editing, then yanking it back to its regsiter. \"ap, [edit], \"add.",
+                    /* Tips from Practical VIm Part V. Patterns */
+                    "Use \\_s to search for whitespace or a linebreak.",
+                    "Use \\zs and \\ze to delimit the visible or selected part of a match.",
+                    /*TODO: "Use the escape({string}, {chars}) function to escape characters - tip 79",*/
+                    "In character-wise visual selection mode, use gn to extend your selection to the next occurrance of the most recent search pattern.",
+                    "Use ea to append to the end of the current word.",
+                    "Append '/e' to the end of a search to place the cursor at the end of the next match.  I.e. /search phrase/e",
+                    /*TODO: "use gUgn to capitalize the next search match.",*/
+                    "To wrap text in, say, parens, use c{motion}(<C-r>\"). Change copies to default buffer, and in Insert mode, <C-r>\" pastes from the default buffer.",
+                    "Use :%s///gn to count the matches of your most recent search.",
+                    "Use :vimgrep /{search phrase}/g % to populate the quickfix list with each match in the current buffer, which can be navigated with N, n, :cnext or :cprev.",
                     ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
