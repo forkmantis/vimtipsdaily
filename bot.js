@@ -25,6 +25,7 @@ var phraseArray = [
                     "In directory view (netrw), create a new file with '%'",
                     "In directory view (netrw), create a new directory with 'd'",
                     "Use ':write !{cmd}' to pipe buffer as input into the specified command",
+                    "Use %:h to get the path part of the current file.  i.e., cd %:h to set the working directory to the directory of the current file.",
                     /* Tips from Practical VIm Part III. Getting Around Faster */
                     "Use 'e' to move to the end of the next word, and 'ge' to the end of the previous word",
                     "Use a /search as the motion for some other command, like delete (d/search<C-R>)",
