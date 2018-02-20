@@ -63,6 +63,8 @@ var phraseArray = [
                     "To wrap text in, say, parens, use c{motion}(<C-r>\"). Change copies to default buffer, and in Insert mode, <C-r>\" pastes from the default buffer.",
                     "Use :%s///gn to count the matches of your most recent search.",
                     "Use :vimgrep /{search phrase}/g % to populate the quickfix list with each match in the current buffer, which can be navigated with N, n, :cnext or :cprev.",
+                    /* My own tips */
+                    "Use :marks to list marks.",
                     ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
