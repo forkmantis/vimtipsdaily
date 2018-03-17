@@ -18,7 +18,7 @@ var phraseArray = [
                     "Use < C-f > to switch from Command-Line mode to the command-line window.",
                     "Use :write !{ cmd} to use the contents of the buffer as standard input for the specified {cmd}",
                     "Use the :source command to execute the batch.vim script",
-                    "Use the argdo: command on a visual selection to perform the same operation across multiple lines",
+                    "Use the argdo to execute an ex command across all files in the :args list.  i.e., a substitution command",
                     "Use '{range}: normal {stuff}' to edit multiple lines in a selection",
                     "Use :ls command to list buffers in memory",
                     /* Tips from Practical VIm Part II. Files */
