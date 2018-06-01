@@ -14,7 +14,6 @@
   "author": "Will Killian <github.user@forkmantis.com>",
   "license": "MIT",
   "dependencies": {
-    "node-twitterbot": "^0.2.2",
     "twit": "^2.2.9"
   }
 }

@@ -1,5 +1,4 @@
 var Twit = require('twit');
-var TwitterBot = require('node-twitterbot').TwitterBot;
 var Bot = new Twit({
  consumer_key: process.env.BOT_CONSUMER_KEY,
  consumer_secret: process.env.BOT_CONSUMER_SECRET,
