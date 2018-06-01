@@ -14,6 +14,7 @@
   "author": "Will Killian <github.user@forkmantis.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "5.0.1",
     "twit": "^2.2.9"
   }
 }

@@ -1,3 +1,4 @@
+var env = require('dotenv').config();
 var Twit = require('twit');
 var Bot = new Twit({
  consumer_key: process.env.BOT_CONSUMER_KEY,
