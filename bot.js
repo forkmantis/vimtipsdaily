@@ -65,6 +65,10 @@ var phraseArray = [
                     "Use :vimgrep /{search phrase}/g % to populate the quickfix list with each match in the current buffer, which can be navigated with N, n, :cnext or :cprev.",
                     /* My own tips */
                     "Use :marks to list marks.",
+                    /* Stuff I found in the Vim Master android app */
+                    "In insert mode, use <C-w> to delete from the begining of the word at the cursor to the front of the cursor position",
+                    "Use yHP to yank from the current line to the top of the screen and PUT above the top of the screen.",
+                    "Use :2,3co. to copy lines 2 and 3 and PUT it below the current line. Use :help :co for more info",
                     ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
