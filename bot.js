@@ -66,10 +66,11 @@ var phraseArray = [
                     /* My own tips */
                     "Use :marks to list marks.",
                     "In insert mode, type the first few characters of a word, then press <C-n> or <C-p> to autocomplete with the next or previous matching word",
-                    /* Stuff I found in the Vim Master android app */
+                    /* Random stuff I ran across and added */
                     "In insert mode, use <C-w> to delete from the begining of the word at the cursor to the front of the cursor position",
                     "Use yHP to yank from the current line to the top of the screen and PUT above the top of the screen.",
-                    "Use :2,3co. to copy lines 2 and 3 and PUT it below the current line. Use :help :co for more info",
+                    "Use :2,3co. to copy lines 2 and 3 and PUT it below the current line. Use :help :co for more info", 
+                    "Use '&' to repeat your last substitution on the current line.  Use 'g&' to repeat the last substitution on all lines.",
                     ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
