@@ -43,7 +43,7 @@ var phraseArray = [
                     "Put from the \": register to put the most recently executed EX command.",
                     "Put from the \"/ register to put the last search pattern used.",
                     "In insert mode, put the contents of the default register with <c-r>\".",
-                    "Use gP and gp to put before or after the current line, and keep the cursor on the previous line.",
+                    "Use gP and gp to put before or after the current line, and place cursor below the pasted line.",
                     "Use :reg to view the contents of all registers, or :reg{register} to view the contents of one.",
                     "Use 10@a to play the macro saved in register a 10 times.",
                     "Use :normal @a to play the macro saved in register a on every line in the selection.",
