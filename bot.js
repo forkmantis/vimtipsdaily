@@ -71,6 +71,7 @@ var phraseArray = [
                     "Use yHP to yank from the current line to the top of the screen and PUT above the top of the screen.",
                     "Use :2,3co. to copy lines 2 and 3 and PUT it below the current line. Use :help :co for more info", 
                     "Use '&' to repeat your last substitution on the current line.  Use 'g&' to repeat the last substitution on all lines.",
+                    "Open VIm directly to the first occurrence of a search term with `vim +/searchterm filename`",
                     ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
