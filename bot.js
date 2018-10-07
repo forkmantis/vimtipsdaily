@@ -62,7 +62,7 @@ var phraseArray = [
                     /*TODO: "use gUgn to capitalize the next search match.",*/
                     "To wrap text in, say, parens, use c{motion}(<C-r>\"). Change copies to default buffer, and in Insert mode, <C-r>\" pastes from the default buffer.",
                     "Use :%s///gn to count the matches of your most recent search.",
-                    "Use :vimgrep /{search phrase}/g % to populate the quickfix list with each match in the current buffer, which can be navigated with N, n, :cnext or :cprev.",
+                    "Use :vimgrep /{search phrase}/g % to populate the quickfix list with each match in the current buffer, which can be navigated with :cnext or :cprev.",
                     /* My own tips */
                     "Use :marks to list marks.",
                     "In insert mode, type the first few characters of a word, then press <C-n> or <C-p> to autocomplete with the next or previous matching word",
