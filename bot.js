@@ -13,7 +13,7 @@ var phraseArray = [
                     "Use <c-a> to increment the next number.  {number}<c-a> adds {number} to the next number.",
                     "Use <c-x> to decrement the next number.  {number}<c-x> subtracts {number} from the next number.",
                     "Use 'o' to toggle to other end of highlighted text. Useful to adjust the starting point of your visual selection",
-                    "Use < C-r > < C-w > to copy the word under the cursor and insert it at the command-line prompt.",
+                    "When in command line mode, copy the word under the cursor and insert into the command line using <C-r> <C-w>.",
                     "Press q: to access command-line window. You can edit your command history like any other text!",
                     "Use < C-f > to switch from Command-Line mode to the command-line window.",
                     "Use :write !{ cmd} to use the contents of the buffer as standard input for the specified {cmd}",
