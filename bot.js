@@ -34,7 +34,7 @@ var phraseArray = [
                     "Use gf to jump to the file name under the cursor. https://vimhelp.appspot.com/editing.txt.html#gf",
                     "Use :changes to see the change list.  Use g; and g, to jump to the locations of the changes.",
                     "Use m{capital letter} to make a global mark. Close and reopen VIm, and press '{capital letter} to open the file w/ the global mark.",
-                    "Use the \"0p to put from the yank register.  Useful when you have to edit with deletions, changes, etc after yanking.",
+                    "The 0 register will contain your most recent yank, even if you have deleted after yanking. Yank a word, delete a different word, then type \"0p to put the yanked word.",
                     /* Tips from Practical VIm Part IV. Registers */
                     "Delete using the \"_d{motion} command to delete without saving a copy, preserving your default register.",
                     "Use the \"+ register to interact with the system clipboard. I.e., \"+p to put system clipboard into your current buffer.",
