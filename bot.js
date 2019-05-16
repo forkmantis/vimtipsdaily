@@ -76,6 +76,7 @@ var phraseArray = [
                     "Use a relative range to perform a substitution.  i.e. -3,-1s#a#X#g to replace 'a' w/ 'X' from from 3 lines to 1 line above the cursor.",
                     "Execute a command on a series of lines matching a pattern, i.e. ':g/aaa/y A' to yank all lines matching 'aaa' into the register. https://vim.fandom.com/wiki/Power_of_g",
                     "Execute a command on a series of lines not matching a pattern, i.e. ':v/aaa/d' to delete all lines not containing 'aaa'. https://vim.fandom.com/wiki/Power_of_g",
+                    "Select a column of numbers, and use g<C-a> to increment them as a set",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
