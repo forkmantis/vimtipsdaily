@@ -10,8 +10,8 @@ var phraseArray = [
                     /* Tips from Practical VIm Part I. Modes */
                     "Practice {command}s with the aw motion. (i.e. daw to delete the word under your cursor)",
                     "From Insert mode, we can switch to Normal mode for one operation by pressing < C-o >",
-                    "Use <c-a> to increment the next number.  {number}<c-a> adds {number} to the next number.",
-                    "Use <c-x> to decrement the next number.  {number}<c-x> subtracts {number} from the next number.",
+                    //"Use <c-a> to increment the next number.  {number}<c-a> adds {number} to the next number.",
+                    //"Use <c-x> to decrement the next number.  {number}<c-x> subtracts {number} from the next number.",
                     //"Use 'o' to toggle to other end of highlighted text. Useful to adjust the starting point of your visual selection",
                     "When in command line mode, copy the word under the cursor and insert into the command line using <C-r> <C-w>.",
                     "Press q: to access command-line window. You can edit your command history like any other text!",
@@ -77,6 +77,7 @@ var phraseArray = [
                     "Execute a command on a series of lines matching a pattern, i.e. ':g/aaa/y A' to yank all lines matching 'aaa' into the register. https://vim.fandom.com/wiki/Power_of_g",
                     "Execute a command on a series of lines not matching a pattern, i.e. ':v/aaa/d' to delete all lines not containing 'aaa'. https://vim.fandom.com/wiki/Power_of_g",
                     "Select a column of numbers, and use g<C-a> to increment them as a set",
+                    "Delete without overwriting your last yank using the black hole register (_). i.e., Delete a word w/ \"_daw, then put the last value in your default register",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
