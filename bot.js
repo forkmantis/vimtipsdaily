@@ -78,6 +78,7 @@ var phraseArray = [
                     "Execute a command on a series of lines not matching a pattern, i.e. ':v/aaa/d' to delete all lines not containing 'aaa'. https://vim.fandom.com/wiki/Power_of_g",
                     "Select a column of numbers, and use g<C-a> to increment them as a set",
                     "Delete without overwriting your last yank using the black hole register (_). i.e., Delete a word w/ \"_daw, then put the last value in your default register",
+                    "Delete a sentence using 'das' with the cursor anywhere in the sentence.  Change a sentence using 'cas'",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
