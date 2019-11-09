@@ -19,3 +19,9 @@ Being a daily user of [todo.txt](http://todotxt.org/), and also [ifttt.com](http
 Another important factor about this project is that I actually finished it and shipped it.  I have to give credit to my friend [@thejustinself](https://twitter.com/thejustinself), who once told me "The reason you have so many unfinished side projects is because you make them too big.  You should make something small enough that you can finish it in a few days or a week."  With that advice in mind, I deliberately kept the scope of [@vimtipsdaily](https://twitter.com/vimtipsdaily) small.
 
 The rest was pretty easy.  I was trying to increase my experience with Javascript and Node at the time, so I grabbed the npm packaages I needed to interact with twitter, created an array of tips and was able to get the first iteration of the project out within days.  
+
+As of Nov 2019, Vim Tips Daily is a little over 2 years old, It's run every day with very little downtime, and has collected over 250 followers.
+
+## Contributions
+
+Please feel free to create issues or submit PRs with tips that you would like to add into the rotation.  
