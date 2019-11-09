@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-[Vim Tips Daily ](https://twitter.com/vimtipsdaily) posts a small task each day to be practiced in VIm.  Most can be done in a minute or two.  The tasks repeat over time, so that through repitition, they become fully a part of your person VIm toolset.
+[Vim Tips Daily ](https://twitter.com/vimtipsdaily) posts a small task each day to be practiced in VIm.  Most can be done in a minute or two.  The tasks repeat over time, so that through repitition, they become a part of your personal VIm toolset.
 
 ## It's Repetitive
 
