@@ -79,6 +79,8 @@ var phraseArray = [
                     "Select a column of numbers, and use g<C-a> to increment them as a set",
                     "Delete without overwriting your last yank using the black hole register (_). i.e., Delete a word w/ \"_daw, then put the last value in your default register",
                     "Delete a sentence using 'das' with the cursor anywhere in the sentence.  Change a sentence using 'cas'",
+                    "Use z+, zz or z- to redraw the screen with the cursor at the top, middle, or bottom of the screen respectively",
+                    "use :help help to learn how to use VIm's robust help system",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
