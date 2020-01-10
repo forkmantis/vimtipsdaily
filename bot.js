@@ -82,6 +82,7 @@ var phraseArray = [
                     "Use z+, zz or z- to redraw the screen with the cursor at the top, middle, or bottom of the screen respectively",
                     "use :help help to learn how to use VIm's robust help system",
                     "During the '/' portion of a search, type <C-f> to open a search history window",
+                    "Use :bd to close a buffer without closing VIm.  Use :bd! to close without saving changes.",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
