@@ -84,6 +84,8 @@ var phraseArray = [
                     "During the '/' portion of a search, type <C-f> to open a search history window",
                     "Use :bd to close a buffer without closing VIm.  Use :bd! to close without saving changes.",
                     "Use gU{motion} to make everything in the {motion} uppercase.  I.e. gUaw to make the word under the cursor uppercase.",
+                    "Navigate to the beginning or end of your most recently yanked or changed text using `[ or `] respectively",
+                    "Navigate to the beginning or end of your most recent visual selection text using `< or `> respectively",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
