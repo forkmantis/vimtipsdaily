@@ -48,7 +48,7 @@ var phraseArray = [
                     "Use 10@a to play the macro saved in register a 10 times.",
                     "Use :normal @a to play the macro saved in register a on every line in the selection.",
                     "Use qA to append keystrokes to the macro in register a.",
-                    "Use :edit! to revert all changes to the first buffer in the argument list",
+                    "Use :edit! to revert all changes to the current buffer",
                     //"Use :wall to save changes to all files in the buffer list.",
                     "Use 'var += 1' in a macro to make a numbered list.  let i = 1<CR> qa I<C-r>=i<CR>) <Esc>:let i += 1<CR> j q", // Tip 71
                     "Edit a macro by putting it's register into your buffer, editing, then yanking it back to its regsiter. \"ap, [edit], \"add.",
