@@ -87,6 +87,7 @@ var phraseArray = [
                     "Navigate to the beginning or end of your most recently yanked or changed text using `[ or `] respectively",
                     "Navigate to the beginning or end of your most recent visual selection text using `< or `> respectively",
                     "Put from the \"+ register to put from the system clipboard.",
+                    "Use your most recent yank/delete in insert mode.  For example, press / to search, then <C-r>\" as your search pattern",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
