@@ -89,6 +89,7 @@ var phraseArray = [
                     "Put from the \"+ register to put from the system clipboard.",
                     "Use your most recent yank/delete in insert mode.  For example, press / to search, then <C-r>\" as your search pattern",
                     "Open the last edited file on the machine with cursor on the latest location by pressing <C-o><C-o>",
+                    "Limit a search and replace operation between lines matching 2 regex patterns using /pattern1/,/pattern2/s/search/replace/",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
