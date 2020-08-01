@@ -53,7 +53,7 @@ var phraseArray = [
                     "Use 'var += 1' in a macro to make a numbered list.  let i = 1<CR> qa I<C-r>=i<CR>) <Esc>:let i += 1<CR> j q", // Tip 71
                     "Edit a macro by putting it's register into your buffer, editing, then yanking it back to its regsiter. \"ap, [edit], \"add.",
                     /* Tips from Practical VIm Part V. Patterns */
-                    "Use \\_s to search for whitespace or a linebreak. Compare to searching for \\s to see the difference.",
+                    "Use \"\\_s\" to search for whitespace or a linebreak. Compare to searching for \\s to see the difference.",
                     "Use \\zs and \\ze to delimit the visible or selected part of a match.",
                     /*TODO: "Use the escape({string}, {chars}) function to escape characters - tip 79",*/
                     "In character-wise visual selection mode, use gn to extend your selection to the next occurrance of the most recent search pattern.",
