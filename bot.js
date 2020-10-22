@@ -91,6 +91,7 @@ var phraseArray = [
                     "Open the last edited file on the machine with cursor on the latest location by pressing <C-o><C-o>",
                     "Limit a search and replace operation between lines matching 2 regex patterns using /pattern1/,/pattern2/s/search/replace/",
                     "Select a visual block using <C-v>{motion}, and insert some text at the beginning of the each line of the block using I{text}<Esc>",
+                    "Use the ex command 'j' to join some lines on a range, i.e. :1,5j",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
