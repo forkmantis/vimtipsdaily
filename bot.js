@@ -6,7 +6,7 @@ var Bot = new Twit({
  access_token: process.env.BOT_ACCESS_TOKEN,
  access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
 });
-var phraseArray = [ 
+var phraseArray = [
                     /* Tips from Practical VIm Part I. Modes */
                     "Practice {command}s with the aw motion. (i.e. daw to delete the word under your cursor)",
                     "From Insert mode, we can switch to Normal mode for one operation by pressing < C-o >",
@@ -69,7 +69,7 @@ var phraseArray = [
                     /* Random stuff I ran across and added */
                     "In insert mode, use <C-w> to delete from the begining of the word at the cursor to the front of the cursor position",
                     "Use yHP to yank from the current line to the top of the screen and PUT above the top of the screen.",
-                    "Use :2,3co. to copy lines 2 and 3 and PUT it below the current line. Use :help :co for more info", 
+                    "Use :2,3co. to copy lines 2 and 3 and PUT it below the current line. Use :help :co for more info",
                     "Use '&' to repeat your last substitution on the current line.  Use 'g&' to repeat the last substitution on all lines.",
                     "Open VIm directly to the first occurrence of a search term with `vim +/searchterm filename`",
                     "Repeat your most recent search/replace on the current line by pressing &",
@@ -92,6 +92,7 @@ var phraseArray = [
                     "Limit a search and replace operation between lines matching 2 regex patterns using /pattern1/,/pattern2/s/search/replace/",
                     "Select a visual block using <C-v>{motion}, and insert some text at the beginning of the each line of the block using I{text}<Esc>",
                     "Use the ex command 'j' to join some lines on a range, i.e. :1,5j",
+                    "Visually select some lines, and save them to a new file with the command :w path/to/new/file",
                 ];
 function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
