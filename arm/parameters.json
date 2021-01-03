@@ -6,7 +6,7 @@
       "value": "vimtipsdaily"
     },
     "runtime": {
-      "value": "dotnet"
+      "value": "node"
     }
   }
 }
