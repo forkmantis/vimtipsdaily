@@ -24,7 +24,7 @@ stages:
         inputs:
           deploymentScope: 'Resource Group'
           azureResourceManagerConnection: 'vimtipsdaily-sc'
-          subscriptionId: 'efde0cbd-dec4-401a-84ab-e37069bfba2b'
+          subscriptionId: 'b8645259-b8c5-4a31-a9f5-da30f2929e05'
           action: 'Create Or Update Resource Group'
           resourceGroupName: 'vimtipsdaily-rg'
           location: 'South Central US'
