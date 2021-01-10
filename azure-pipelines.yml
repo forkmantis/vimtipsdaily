@@ -76,4 +76,4 @@ stages:
                 azureSubscription:  'vimtipsdaily-sc'
                 appType: functionApp
                 appName: vimtipsdaily
-                package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+                package: $(Pipeline.Workspace)/**/vimtipsdaily.zip
