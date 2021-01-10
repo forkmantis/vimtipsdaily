@@ -51,10 +51,10 @@ stages:
 
       - task: ArchiveFiles@2
         inputs:
-          rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+          rootFolderOrFile: $(Build.ArtifactStagingDirectory)/vimtipsdaily.zip
           includeRootFolder: false
-      - publish: '$(System.DefaultWorkingDirectory)'
-        artifact: functionapp
+      - publish: $(Build.ArtifactStagingDirectory)/vimtipsdaily.zip
+        artifact: vimtipsdailyrelease
 
   - stage: prod
     dependsOn: build
@@ -67,7 +67,7 @@ stages:
           deploy:
             steps:
             - download: current
-              artifact: functionapp
+              artifact: vimtipsdailyrelease
 
             - task: AzureFunctionApp@1
               inputs:
