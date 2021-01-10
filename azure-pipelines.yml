@@ -53,7 +53,8 @@ stages:
         inputs:
           rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
           includeRootFolder: false
-      - publish: '$(System.ArtifactsDirectory)'
+      - publish: '$(System.DefaultWorkingDirectory)'
+        artifact: functionapp
 
   - stage: prod
     dependsOn: build
@@ -65,7 +66,8 @@ stages:
         runOnce:
           deploy:
             steps:
-            - download: '$(System.DefaultWorkingDirectory)'
+            - download: current
+              artifact: functionapp
 
             - task: AzureFunctionApp@1
               inputs:
