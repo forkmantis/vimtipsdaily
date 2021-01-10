@@ -70,6 +70,15 @@ stages:
             - task: DownloadPipelineArtifact@1
               inputs:
                 downloadPath: '$(System.DefaultWorkingDirectory)'
+
+            - task: Bash@3
+              inputs:
+                targetType: 'inline'
+                script: echo 'default working directory'; find $(System.DefaultWorkingDirectory) -iname "*.zip"
+            - task: Bash@3
+              inputs:
+                targetType: 'inline'
+                script: echo 'artifacts directory'; find $(System.ArtifactsDirectory) -iname "*.zip"
             - task: AzureFunctionApp@1
               inputs:
                 azureSubscription:  'vimtipsdaily-sc'
