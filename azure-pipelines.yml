@@ -33,7 +33,7 @@ stages:
           csmParametersFile: './arm/parameters.json'
           deploymentMode: 'Incremental'
 
-  - stage: 'Build'
+  - stage: build
     jobs:
     - job: 'Build'
       displayName: 'Build'
@@ -56,3 +56,23 @@ stages:
       - task: PublishPipelineArtifact@0
         inputs:
           targetPath: '$(System.ArtifactsDirectory)'
+
+  - stage: prod
+    dependsOn: build
+    jobs:
+    - deployment: deployProd
+      displayName: 'Deploy to Prod'
+      environment: vimtipsdaily-env
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - task: DownloadPipelineArtifact@1
+              inputs:
+                downloadPath: '$(System.DefaultWorkingDirectory)'
+            - task: AzureFunctionApp@1
+              inputs:
+                azureSubscription: $(azureSubscription)
+                appType: functionApp
+                appName: vimtipsdaily
+                package: $(System.ArtifactsDirectory)/**/*.zip
