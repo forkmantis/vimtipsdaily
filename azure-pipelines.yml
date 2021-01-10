@@ -53,9 +53,7 @@ stages:
         inputs:
           rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
           includeRootFolder: false
-      - task: PublishPipelineArtifact@0
-        inputs:
-          targetPath: '$(System.ArtifactsDirectory)'
+      - publish: '$(System.ArtifactsDirectory)'
 
   - stage: prod
     dependsOn: build
@@ -67,9 +65,7 @@ stages:
         runOnce:
           deploy:
             steps:
-            - task: DownloadPipelineArtifact@1
-              inputs:
-                downloadPath: '$(System.DefaultWorkingDirectory)'
+            - download: '$(System.DefaultWorkingDirectory)'
 
             - task: AzureFunctionApp@1
               inputs:
