@@ -72,7 +72,7 @@ stages:
                 downloadPath: '$(System.DefaultWorkingDirectory)'
             - task: AzureFunctionApp@1
               inputs:
-                azureSubscription: $(azureSubscription)
+                azureSubscription:  'vimtipsdaily-sc'
                 appType: functionApp
                 appName: vimtipsdaily
                 package: $(System.ArtifactsDirectory)/**/*.zip
