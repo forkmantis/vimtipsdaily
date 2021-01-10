@@ -51,7 +51,9 @@ stages:
 
       - task: ArchiveFiles@2
         inputs:
-          rootFolderOrFile: $(Build.ArtifactStagingDirectory)/vimtipsdaily.zip
+          rootFolderOrFile: $(System.DefaultWorkingDirectory)
+          archiveType: 'zip'
+          archiveFile: $(Build.ArtifactStagingDirectory)/vimtipsdaily.zip
           includeRootFolder: false
       - publish: $(Build.ArtifactStagingDirectory)/vimtipsdaily.zip
         artifact: vimtipsdailyrelease
