@@ -48,3 +48,11 @@ stages:
 
       - script: npm install
         displayName: 'npm install and build'
+
+      - task: ArchiveFiles@2
+        inputs:
+          rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+          includeRootFolder: false
+      - task: PublishPipelineArtifact@0
+        inputs:
+          targetPath: '$(System.ArtifactsDirectory)'
